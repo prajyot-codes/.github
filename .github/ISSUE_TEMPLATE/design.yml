@@ -55,14 +55,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: affected_components
-    attributes:
-      label: "Affected Components"
-      description: "List the UI elements, pages, or architectural parts affected."
-      placeholder: "Example: Navbar, Sidebar, API Schema, etc."
-    validations:
-      required: false
 
   - type: checkboxes
     id: no-duplicate-issues
