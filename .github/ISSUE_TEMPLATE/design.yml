@@ -7,9 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reporting design flaws in AsyncAPI Docs 📑. We appreciate your contribution! 🙂  
+        Thank you for reporting design flaws in AsyncAPI Website 📑. We appreciate your contribution! 🙂  
         
-        Before filing this report, please ensure that someone hasn’t already reported the same issue in our Dev Docs Board.
+        Before filing this report, please ensure that someone hasn’t already reported the same issue in our [Dev Docs Board](https://github.com/orgs/asyncapi/projects/8).
 
   - type: textarea
     id: description
