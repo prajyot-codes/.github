@@ -18,7 +18,7 @@ body:
       label: "Expected Design"
       description: "Describe how the design should ideally function or appear."
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: current_behavior
@@ -26,7 +26,7 @@ body:
       label: "Current Design Behavior"
       description: "Explain the existing design and what issues it causes."
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: screenshots
@@ -55,19 +55,8 @@ body:
       description: "List the UI elements, pages, or architectural parts affected."
       placeholder: "Example: Navbar, Sidebar, API Schema, etc."
     validations:
-      required: true
+      required: false
 
-  - type: dropdown
-    id: priority
-    attributes:
-      label: "Priority Level"
-      description: "How urgent is this issue?"
-      options:
-        - "Low (Minor inconvenience)"
-        - "Medium (Affects usability)"
-        - "High (Severely impacts the user experience)"
-    validations:
-      required: true
 
   - type: checkboxes
     id: no-duplicate-issues
