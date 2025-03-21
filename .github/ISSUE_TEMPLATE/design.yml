@@ -1,0 +1,94 @@
+name: 🎨 Design Flaw Report
+description: Report design-related issues for improvement.
+title: "[Design] <brief description>"
+labels: ["design", "ux", "enhancement"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the Design Flaw"
+      description: "Provide a clear and concise description of the issue."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Design"
+      description: "Describe how the design should ideally function or appear."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: "Current Design Behavior"
+      description: "Explain the existing design and what issues it causes."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots or Mockups"
+      description: "Attach relevant images, diagrams, or UI designs."
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "How to Identify the Issue"
+      description: "Provide steps to observe the design flaw."
+      value: |
+        1. Navigate to...
+        2. Click on...
+        3. Notice the design issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_components
+    attributes:
+      label: "Affected Components"
+      description: "List the UI elements, pages, or architectural parts affected."
+      placeholder: "Example: Navbar, Sidebar, API Schema, etc."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority Level"
+      description: "How urgent is this issue?"
+      options:
+        - "Low (Minor inconvenience)"
+        - "Medium (Affects usability)"
+        - "High (Severely impacts the user experience)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: no-duplicate-issues
+    attributes:
+      label: "👀 Have you checked for similar open issues?"
+      options:
+        - label: "I checked and didn't find a similar issue"
+          required: true
+
+  - type: checkboxes
+    id: read-code-of-conduct
+    attributes:
+      label: "📜 Have you read the Contributing Guidelines?"
+      options:
+        - label: "I have read the [Contributing Guidelines](https://github.com/asyncapi/.github/blob/master/CONTRIBUTING.md)"
+          required: true
+
+  - type: dropdown
+    attributes:
+      label: "Are you willing to work on this issue?"
+      description: "This is optional, but we'd love your contributions!"
+      options:
+        - "Yes, I am willing to submit a PR!"
+        - "No, someone else can work on it"
