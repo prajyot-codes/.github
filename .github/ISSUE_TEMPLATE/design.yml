@@ -4,6 +4,13 @@ title: "[Design] <brief description>"
 labels: ["design", "ux", "enhancement"]
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting design flaws in AsyncAPI Docs 📑. We appreciate your contribution! 🙂  
+        
+        Before filing this report, please ensure that someone hasn’t already reported the same issue in our Dev Docs Board.
+
   - type: textarea
     id: description
     attributes:
@@ -57,7 +64,6 @@ body:
     validations:
       required: false
 
-
   - type: checkboxes
     id: no-duplicate-issues
     attributes:
@@ -75,6 +81,7 @@ body:
           required: true
 
   - type: dropdown
+    id: willingness
     attributes:
       label: "Are you willing to work on this issue?"
       description: "This is optional, but we'd love your contributions!"
